@@ -26,7 +26,7 @@ exec /app/app \
   --authentication-keys-directory=/data/pubkeys \
   --private-keys-directory=/data/keys \
   --bind-random-ports=false \
-  --port-bind-range="${SISH_PORT_BIND_RANGE:-80,443}" \
+  --bind-random-subdomains=false \
   --proxy-ssl-termination="${SISH_PROXY_SSL_TERMINATION:-true}" \
   --redirect-root=false \
   --domain="${SISH_DOMAIN}" \
