@@ -29,5 +29,6 @@ exec /app/app \
   --bind-random-subdomains=false \
   --proxy-ssl-termination="${SISH_PROXY_SSL_TERMINATION:-true}" \
   --redirect-root=false \
+  --log-to-client \
   --domain="${SISH_DOMAIN}" \
   "$@"
