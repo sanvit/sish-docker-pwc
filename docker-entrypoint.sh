@@ -19,6 +19,7 @@ fi
 exec /app/app \
   --ssh-address="${SISH_SSH_ADDRESS:-0.0.0.0:2222}" \
   --http-address="${SISH_HTTP_ADDRESS:-0.0.0.0:8080}" \
+  --https=false \
   --authentication=true \
   --authentication-password="" \
   --authentication-key-request-url="${SISH_AUTHENTICATION_KEY_REQUEST_URL:-}" \
