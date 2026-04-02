@@ -28,6 +28,7 @@ exec /app/app \
   --bind-random-ports=false \
   --bind-random-subdomains=false \
   --proxy-ssl-termination="${SISH_PROXY_SSL_TERMINATION:-true}" \
+  --idle-connection=false \
   --redirect-root=false \
   --log-to-client \
   --domain="${SISH_DOMAIN}" \
